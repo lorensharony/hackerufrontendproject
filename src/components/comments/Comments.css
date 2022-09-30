@@ -1,0 +1,23 @@
+.main-comments {
+    min-height: 80vh;
+}
+
+.main-comments {
+    margin: 10px auto;
+}
+
+.comment-card {
+    margin-bottom: 1rem;
+}
+
+.comment-middle {
+    margin: 10px auto;
+}
+
+.comment-go-back {
+    margin-top: 2rem;
+}
+
+.my-card-height {
+    min-height: 50vh;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+.about-content p {
+    margin: 0;
+}
+
+.about-height {
+    min-height: 80vh;
+    direction: rtl;
+    font-family: 'Heebo', sans-serif;
+    margin: 10px auto;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.sub-content {
+    border: 1px solid black;
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.dark {
+    box-shadow: rgba(242, 181, 181, 0.943) 0px 2px 5px 0px, rgba(247, 78, 78, 0.765) 0px 1px 1px 0px;
+}

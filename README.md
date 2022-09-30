@@ -1,70 +1,200 @@
-# Getting Started with Create React App
+# פרויקט חדשות:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+מאת: לוריין שרוני.
+<br>
+ת.ז: 304807985.
+<br>
+נייד: 052-4624854.
+<br>
+מייל: loren.sharony@gmail.com.
+<br>
+מספר מחזור: D110422ER.
+<br>
+<br>
 
-## Available Scripts
+# ספריות:
 
-In the project directory, you can run:
+<p>הספריות הראשיות באפליקציה הן:</p>
+1. React
+<br>
+2. Redux Tool Kit.
+<br>
+3. Bootstrap.
+<br>
+4. React Bootstrap.
+<br>
+5. React Redux. 
+<br>
+6. React Router Dom.
+<br>
+<br>
+קיימות ספריות נוספות.
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# תיקיות: features ו app:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p>בתיקיית features קיימות שתי תיקיות: 
+הראשונה news והשנייה theme.
+ </p>
+ <p>בתוך תיקיית news  קיים קובץ js בשם news-slice. .קובץ זה מכיל את המצב ההתחלתי של החנות, את ה case reducers ואת הפונקציות האסינכרוניות.</p>
+ <p> ה case reducers הם:
+ <br>
+ 1. מחיקת כתבה.
+ <br>
+ 2. הוספה/ הסרה של כתבה מהמועדפים.
+ <br>
+ 3. הוספת תגובה.
+ <br>
+ 4. עריכת תגובה.
+ <br>
+ 5. חיפוש באפליקציה באמצעות מלל חופשי. 
+ <br>
+ 6. מיון כתבות מתאריך חדש לישן.
+ <br>
+ 7. מיון כתבות מתאריך ישן לחדש.
+ <br>
+<p>הפונקציות האסינכרוניות הן:
+<br>
+ 1. pending.
+ <br>
+ 2. fulfilled.
+ <br>
+ 3. rejected.
+ </p>
+ <p> בסוף יש את הייצוא של כל הפעולות על מנת שנוכל בהמשך לבצע את פעולת ה dispatch.</p>
+ <p>תיקיית theme מכילה את ה theme slice: זהו ה Dark Mode של האתר.</p>
+ <p>באפלקיצייה ה id של כל כתבה הוא הכותרת שלה.</p>
 
-### `npm test`
+ <br>
+ <p> החנות:</p>
+ <p>החנות יושבת בתוך תקיית app והיא מכילה את שני ה reducers שלנו: news + theme.  </p>
+ <p>ב insex.js החנות מוכלת על האפליקצייה באמצעות ה Provider שעוטף אותה.</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ <br>
 
-### `npm run build`
+# תיקיית services:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>מכילה את הקובץ newsService בו נמצא ה url של ה api ביחד עם ה api key.</p>
+<p>הפונקציה האסינכרונית שנמצאת ב news slice משתמשת בכתובת זו.</p>
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# קובץ app.js:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>מכיל 13 נתיבים. בנוסף, ה Dark Mode עוטף את כל האפליקציה.</p>
+<p> מתוך ה 13 קיימים שבעה נתיבים לקומפוננטה הראשית של News והם מפנים לקטגוריות.  קיים נתיב נוסף לדף הבית.</p>
+<p>הקטגוריות של החדשות באתר הן: </p>
+1. general- המכיל כתבות מכל הקטגרויות.
+<br>
+2. science- כתבות בתחום המדע.
+<br>
+3.health- כתבות בתחום הבריאות.
+<br>
+4. sports- כתבות בתחום הספורט. 
+<br>
+5. entertainment- כתבות בתחום הבידור.
+<br>
+6. technology- כתבות בתחום הטכנולוגי.
+<br>
+7. business- כתבות בתחום העסקים.
+<br>
+<br>
+<p> שאר הנתיבים הם לעמודים הראשיים של האתר (בנוסף ל News).</p>
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# העמודים הראשיים באתר:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p>העמודים הראשיים באתר נמצאים בתוך תקיית pages והם: </p>
+1. About.
+<br>
+2. Comments
+<br>
+3. Favorites.
+<br>
+4. News.
+<br>
+5. News Details.
+<br>
+6. Not Found 404.
+<br>
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# ה Hook - useNews:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p>מוציא לפועל את הפונקציה האסינכרונית שנמצאת ב news-slice. </p>
+<p>לפונקציה האסינכרונית קוראים fetchNews- זוהי פעולה אסינכרונית של Redux שעובדת עם ה store. </p>
+<br>
 
-## Learn More
+# קומפוננטת Top Nav:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p>נמצאת בתיקיית component ב- nav.</p>
+<p>זהו בר הניווט העליון של האתר. העיצוב נלקח מספריית react-bootstrap. הקומפוננטה מכילה Nav link מספריית react-router-dom.</p>
+<p>בקומפונטה זו מוצגות קומפוננטות נוספות: TopNavLink, כפתור ה Dark Molde,  ה Drop Down, כפתור הסינון לפי תאריך הכתבה- SortByDate  וה  SearchBar בו ניתן לבצע חיפוש ע"י שימוש בטקסט חופשי.</p>
+<p>קומפוננטת ה search bar נמצאת בתקיית components, תחת תקייה נוספת בשם search-bar.  </p>
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# קומפוננטת News:
 
-### Code Splitting
+<p> מבצעת בקשת רשת מה api ומכניסה את הנתונים ל Redux.</p>
+<p>זוהי קומפוננטה ראשית המכילה בתוכה את ה news item.</p>
+<p>כלומר, עושה מיפוי על כל news item.</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br>
 
-### Analyzing the Bundle Size
+# קומפוננטת News item:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p>נמצאת בתקיית components בתקייה שנקראת news-item.</p>
+<p>מכילה את עיצוב  הכרטיסיה הבודדת.</p>
+<p> העיצוב נלקח מספריית react-bootstrap.</p>
+<p>הקומפוננטה מכילה את התמונה של הכתבה,  הכותרת, שם הכותב, תאריך פרסום ותאור בכמה מילים על מה הכתבה.</p>
+<p>הקומפוננטה מציגה ארבע קומפוננטות נוספות:</p>
+1. NewsItemFavoriteBtn-  בקליק, כפתור הלב מסומן אם הכתבה מועדפת ובקליק נוסף מבוטל. הקומפוננטה משתמשת ב action של ה toggleFavorite מה news-slice ע"י dispatch. 
+בנוסף, נעשה שימוש בספריית react-toastify על מנת שהמשתמש יקבל הודעה כאשר כתבה נוספה או הוסרה מהמועדפים. 
+<br> <br>
+2. ReadTheArticleBtn-  קומפוננטה המשתמשת ב Hook useNavigte כדי לנתב את המשתמש לקומפוננטה חיצונית בשם News Details ע"י שימוש ב id ובקטגוריה.
+<br> <br>
+3. NewsItemComments- קומפוננטת המנתבת את המשתמש לקומפונטטת Comments. 
+<br> <br>
+4. NewsItemDeleteBtn-  בקליק מפעילה את ה action של RemoveNews מה news slice  ע"י שימוש ב dispatch. 
+<br> <br>
+<p>כל הקומפוננטות האלו נמצאות בתקיית component ב news-item. ועל כולן מוכל Dark Mode. (חוץ מ NewsItemFavoriteBtn בה לא מוכל ה Dark Mode.)</p>
+<br>
 
-### Making a Progressive Web App
+# קומפוננטת Favorites:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p> קומפונטטה ששומרת בתוכה את כל הכתבות שהמשתמש סימן ככתבות מועדפות ומחזירה newsItem של אותן הכתבות. </p>
+<br>
 
-### Advanced Configuration
+# קומפוננטת News Details:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p> קומפונטטה המכילה בתוכה פרטים נוספים על הכתבה: תוכן נוסף ולינק לכתבה המקורית.</p>
+<p>הקומפוננטה מוצאת את הכתבה ע"י ה id שלה, במקרה שלנו זוהי הכותרת של הכתבה. </p>
+<br>
 
-### Deployment
+# קומפוננטת Comments:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p>קומפוננטה בה המשתמש יכול להוסיף תגובה ע"י פונקציית addNote וע"י שימוש ב  dispatch ל action בשם addComment. לכל כתבה יש עמוד תגובות. </p>
+<p> הקומפוננטה עושה מיפוי לקומפוננטת בת בשם SingleComment.
+זוהי קומפוננטה המכילה את המבנה של תגובה בודדת. היא גם מכילה בתוכה קומפוננטה נוספת בשם EditComment.</p>
+<p>EditComment  משתמשת בפונקציה - כאשר המשתמש לוחץ על כפתור העריכה, נעשה  dispatch ל action בשם editComment. דרכו ניתן לערוך תגובה. </p>
 
-### `npm run build` fails to minify
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# קומפוננטת About:
+
+<p>נמצאת בתיקיית pages.</p>
+<p>מיכלה הסבר על הפרויקט ומענה על דרישות הפרויקט.</p>
+<br>
+
+# קומפוננטת Not Found 404:
+
+<p>נמצאת בתיקיית pages.</p>
+<p>מכילה את דף 404.</p>
+<br>
+
+# קומפוננטת Footer:
+
+<p>נמצאת בתקיית components- footer.</p>
+<p>העיצוב נלקח מספריית mdb-react-ui-kit.</p>
+<p>בקומפוננטה זו יש קישור לרשתות החברתיות, לגיטאהב וללינקדאין.</p>

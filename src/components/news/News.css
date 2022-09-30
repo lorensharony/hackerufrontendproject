@@ -1,0 +1,17 @@
+.card-container {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    min-height: 80vh;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.min-height {
+    min-height: 80vh;
+}
