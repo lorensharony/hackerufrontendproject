@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import { Navigate, Route, Routes } from "react-router-dom";
 import TopNav from './components/nav/TopNav';
 import News from "./pages/News"
